@@ -1,141 +1,240 @@
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" style="scroll-behavior: smooth;">
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<title>Mohammed Dilshad C</title>
-<link rel="icon" href="Media/Images/Dilshu.JPG" type="image/gif" sizes="16x16">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Mohammed Dilshad C</title>
+    <link rel="icon" href="Media/Images/Dilshu.JPG" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* മലയാളത്തിലുള്ള വിവരണം: കോൺടാക്ട് സെക്ഷനിലെ ഐക്കണുകൾക്ക് കുറച്ചുകൂടി ആകർഷകമായ സ്റ്റൈൽ നൽകാൻ താഴെ കൊടുത്ത CSS ഉപയോഗിക്കുന്നു */
+        .contact-icon {
+            font-size: 1.5rem; /* ഐക്കൺ സൈസ് */
+            margin-right: 10px; /* ഐക്കണും ടെക്സ്റ്റും തമ്മിലുള്ള അകലം */
+            color: #007bff; /* ഐക്കൺ കളർ (Bootstrap primary color) */
+        }
+        .contact-link {
+            color: #343a40; /* ലിങ്കിന്റെ സാധാരണ കളർ */
+            text-decoration: none; /* ലിങ്കിന്റെ അടിവര ഒഴിവാക്കാൻ */
+        }
+        .contact-link:hover {
+            color: #0056b3; /* ലിങ്കിൽ മൗസ് ഹോവർ ചെയ്യുമ്പോൾ ഉള്ള കളർ */
+            text-decoration: underline; /* ലിങ്കിൽ മൗസ് ഹോവർ ചെയ്യുമ്പോൾ അടിവര കാണിക്കാൻ */
+        }
+        .list-group-item {
+            border: none; /* ലിസ്റ്റ് ഐറ്റത്തിന്റെ ബോർഡർ ഒഴിവാക്കാൻ */
+            padding-left: 0; /* ലിസ്റ്റ് ഐറ്റത്തിന്റെ ഇടത് പാഡിംഗ് ഒഴിവാക്കാൻ */
+        }
+    </style>
 </head>
+
 <body>
-<header class="bg-info" style="position: fixed;width: 100%;z-index: 1;">
-				<div class="row text-white ">
-								<div class="col-md-6 col-9 p-3 pl-5">
-												<h2>Mohammed Dilshad C</h2>
-								</div>
-								<div class="col-md-6 col-3 my-auto">
-												<nav class="navbar navbar-expand-lg navbar-light"><button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarSupportedContent"> <ul class="navbar-nav ml-auto"> <li class="nav-item active"> <a class="nav-link text-white" href="#home-section">Home <span class="sr-only">(current)</span></a> </li>
-												<li class="nav-item">
-																<a class="nav-link text-white" href="#service-section">Services</a>
-													<li class="nav-item">
-																<a class="nav-link text-white" href="#experience-section">Experience</a>
-																<li class="nav-item">
-																<a class="nav-link text-white" href="#contact-section">Contact</a>
-												
-												    </ul>  </div> </nav>
-								</div>
-				</div>
-</header>
+    <header class="bg-info" style="position: fixed;width: 100%;z-index: 1;">
+        <div class="row text-white ">
+            <div class="col-md-6 col-9 p-3 pl-5">
+                <h2>Mohammed Dilshad C</h2>
+            </div>
+            <div class="col-md-6 col-3 my-auto">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"> <span
+                            class="navbar-toggler-icon"></span> </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active"> <a class="nav-link text-white" href="#home-section">Home <span
+                                        class="sr-only">(current)</span></a> </li>
+                            <li class="nav-item"> <a class="nav-link text-white"
+                                    href="#service-section">Services</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-white"
+                                    href="#experience-section">Experience</a> </li>
+                            <li class="nav-item"> <a class="nav-link text-white"
+                                    href="#contact-section">Contact</a> </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-<section id="home-section" style="padding-top: 8em;">
-				<div class="container">
-								<div class="row align-items-center">
-												<div class="col-md-6">
-																<img src="Media/Images/Dilshu.JPG" alt="" class="img-fluid rounded-circle">
-												</div>
-												<div class="col-md-6 pt-5">
-																<h4>Mohammed Dilshad C <br>Manjeri,Kerala</h4>
-																				<p>"you are the average of 5 people you hang around"</p>
-																								<footer>- Dilshad</footer>
-																
-												</div>
-								</div>
-				</div>
-</section>
-<section class="bg-light p-5" id="service-section">
-				<div class="container">
-								<h1 class="text-center">Services</h1>
-								<div class="row">
-												<div class="col-md-4 pt-4">
-																<div class="card text-center p-3" > <i class="fas fa-business-time display-1 text-info"></i> <div class="card-body"> <h5 class="card-title">Painting</h5> <p class="card-text">5 Years work in house painting field, some hospital and buildings work with us</p>
-																</div> 
-																</div>
-												
-												</div>
-												
-												<div class="col-md-4 pt-4">
-																<div class="card text-center p-3" > <i class="fas fa-business-time display-1 text-info"></i> <div class="card-body"> <h5 class="card-title">Driver</h5> <p class="card-text">2 Years experience in driving dubai, average 80-100 kilometers per day drive</p>
-																</div> 
-																</div>
-												
-												</div>
-												
-												<div class="col-md-4 pt-4">
-																<div class="card text-center p-3" > <i class="fas fa-business-time display-1 text-info"></i> <div class="card-body"> <h5 class="card-title">Painting</h5> <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-																</div> 
-																</div>
-												
-												</div>
-												
-												
-												
-								</div>
-								
-								<div class="row ">
-													
-								</div>
-								
-				</div>
-</section>
+    <section id="home-section" style="padding-top: 8em;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="Media/Images/Dilshu.JPG" alt="Mohammed Dilshad C" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-6 pt-5">
+                    <h4>Mohammed Dilshad C <br>Manjeri,Kerala</h4>
+                    <p>"you are the average of 5 people you hang around"</p>
+                    <footer>- Dilshad</footer>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="bg-wight p-5" id="experience-section">
-				<div class="container">
-								<h1 class="text-center">Experience</h1>
-								<div class="row">
-												<div class="col-md-4 pt-4">
-																<div class="card text-center p-3" > <i class="fas fa-business-time display-1 text-info"></i> <div class="card-body"> <h5 class="card-title">Painter</h5> <p class="card-text">5 Years work in house painting field, some hospital and buildings work with us</p>
-																</div> 
-																</div>
-												
-												</div>
-												
-												<div class="col-md-4 pt-4">
-																<div class="card text-center p-3" > <i class="fas fa-business-time display-1 text-info"></i> <div class="card-body"> <h5 class="card-title">Driver</h5> <p class="card-text">2 Years experience in driving dubai, average 80-100 kilometers per day drive</p>
-																</div> 
-																</div>
-												
-												</div>
-												
-												<div class="col-md-4 pt-4">
-																<div class="card text-center p-3" > <i class="fas fa-business-time display-1 text-info"></i> <div class="card-body"> <h5 class="card-title">Sales</h5> <p class="card-text">4 Year working sales field,2 year in cosmetics route sales,2 year mobile accessories shop</p>
-																</div> 
-																</div>
-												
-												</div>
-								
-								</div>
-								
-								
-				</div>
-</section>
+    <section class="bg-light p-5" id="service-section">
+        <div class="container">
+            <h1 class="text-center">Services</h1>
+            <div class="row">
+                <div class="col-md-4 pt-4">
+                    <div class="card text-center p-3"> <i class="fas fa-paint-brush display-1 text-info"></i> <div class="card-body">
+                            <h5 class="card-title">Painting</h5>
+                            <p class="card-text">5 Years work in house painting field, some hospital and buildings work
+                                with us</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pt-4">
+                    <div class="card text-center p-3"> <i class="fas fa-car display-1 text-info"></i> <div class="card-body">
+                            <h5 class="card-title">Driver</h5>
+                            <p class="card-text">2 Years experience in driving dubai, average 80-100 kilometers per day
+                                drive</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pt-4">
+                    <div class="card text-center p-3"> <i class="fas fa-briefcase display-1 text-info"></i> <div class="card-body">
+                            <h5 class="card-title">Sales</h5> <p class="card-text">4 Year working sales field,2 year in cosmetics route sales,2 year mobile accessories shop</p> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<section class="bg-light p-5" id="contact-section">
-				<div class="container">
-								<h1 class="text-center ">Contact</h1>
-												<div class="row ">
-																<div class="col-md-12 pt-4">
-																				
-												</div>
-								</div>
-								
-				</div>
-</section>
+    <section class="bg-wight p-5" id="experience-section">
+        <div class="container">
+            <h1 class="text-center">Experience</h1>
+            <div class="row">
+                <div class="col-md-4 pt-4">
+                    <div class="card text-center p-3"> <i class="fas fa-paint-brush display-1 text-info"></i> <div class="card-body">
+                            <h5 class="card-title">Painter</h5>
+                            <p class="card-text">5 Years work in house painting field, some hospital and buildings work
+                                with us</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pt-4">
+                    <div class="card text-center p-3"> <i class="fas fa-car display-1 text-info"></i> <div class="card-body">
+                            <h5 class="card-title">Driver</h5>
+                            <p class="card-text">2 Years experience in driving dubai, average 80-100 kilometers per day
+                                drive</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 pt-4">
+                    <div class="card text-center p-3"> <i class="fas fa-tags display-1 text-info"></i> <div class="card-body">
+                            <h5 class="card-title">Sales</h5>
+                            <p class="card-text">4 Year working sales field,2 year in cosmetics route sales,2 year
+                                mobile accessories shop</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<footer class="bg-info p-4">
-				<div class="container">
-								<div class="row">
-												<div class="col-md-12 text-center text-white">
-																<p>Copyright</p>
-												</div>
-								</div>
-				</div>
+    <section class="bg-light p-5" id="contact-section">
+        <div class="container">
+            <h1 class="text-center">Contact Me</h1>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-8">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <i class="fas fa-mobile-alt contact-icon"></i>
+                            <a href="tel:+971551618462" class="contact-link">Mobile: +971 55 161 8462</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fab fa-whatsapp contact-icon" style="color: #25D366;"></i>
+                            <a href="https://wa.me/971551618462" target="_blank" class="contact-link">WhatsApp: +971 55 161 8462</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <a href="mailto:dilshu97@gmail.com" class="contact-link">Email: dilshu97@gmail.com</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fab fa-instagram contact-icon" style="color: #C13584;"></i>
+                            <a href="https://www.instagram.com/mdc8497" target="_blank" class="contact-link">Instagram: @mdc8497</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fab fa-tiktok contact-icon" style="color: #000000;"></i>
+                            <a href="https://www.tiktok.com/mdc8497" target="_blank" class="contact-link">TikTok: @mdc8497</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fab fa-telegram-plane contact-icon" style="color: #0088cc;"></i>
+                            <a href="https://t.me/mdc8497" target="_blank" class="contact-link">Telegram: @mdc8497</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fas fa-globe contact-icon"></i>
+                            <a href="http://store1758.store.link" target="_blank" class="contact-link">Website: store1758.store.link</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fab fa-github contact-icon" style="color: #333;"></i>
+                            <a href="https://github.com/dilshu" target="_blank" class="contact-link">GitHub: @dilshu</a>
+                        </li>
+                        <li class="list-group-item">
+                            <i class="fab fa-linkedin contact-icon" style="color: #0A66C2;"></i>
+                            <a href="https://www.linkedin.com/in/dilshu" target="_blank" class="contact-link">LinkedIn: @dilshu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+    </section>
 
-</footer>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-	<script> $("#submit-form").submit((e)=>{ e.preventDefault() $.ajax({ url:"https://script.google.com/macros/s/AKfycbwirCxWkKxiXxtC1KbFBIK83nSxAw7pRrf6EkQQ/exec", data:$("#submit-form").serialize(), method:"post", success:function (response){ alert("Form submitted successfully") window.location.reload() //window.location.href="https://google.com" }, error:function (err){ alert("Something Error") } }) }) </script>
+    <footer class="bg-info p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center text-white">
+                    <p>Copyright &copy; <span id="currentYear"></span> Mohammed Dilshad C. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <script>
+        // മലയാളത്തിലുള്ള വിവരണം: ഫൂട്ടറിലെ വർഷം ഓട്ടോമാറ്റിക്കായി ഇപ്പോഴത്തെ വർഷം കാണിക്കാൻ ഈ സ്ക്രിപ്റ്റ് ഉപയോഗിക്കുന്നു.
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // മലയാളത്തിലുള്ള വിവരണം: താഴെ കാണുന്നതാണ് നിങ്ങൾ നേരത്തെ നൽകിയ Google Apps Script.
+        // ഈ സ്ക്രിപ്റ്റ് ഒരു HTML ഫോം (`id="submit-form"`) സബ്മിറ്റ് ചെയ്യുമ്പോൾ പ്രവർത്തിക്കും.
+        // ഇത് ഫോമിലെ ഡാറ്റയെടുത്ത് Google Apps Script-ലേക്ക് അയക്കും (url-ൽ കൊടുത്ത ലിങ്കിലേക്ക്).
+        // അവിടെ ആ ഡാറ്റ ഒരുപക്ഷേ Google Sheet-ലോ മറ്റോ സേവ് ചെയ്യാൻ ഉപയോഗിക്കുന്നുണ്ടാകാം.
+        // ഈ സ്ക്രിപ്റ്റ് പ്രവർത്തിക്കണമെങ്കിൽ, നിങ്ങളുടെ HTML കോഡിൽ `id="submit-form"` എന്ന ഐഡിയുള്ള ഒരു ഫോം ഉണ്ടാകണം.
+        // മുകളിൽ കോൺടാക്ട് സെക്ഷനിൽ ഒരു സാമ്പിൾ ഫോം കമൻറ് (<-- -->) ചെയ്തു വെച്ചിട്ടുണ്ട്. ആവശ്യമെങ്കിൽ അത് ഉപയോഗിക്കാം.
+        $("#submit-form").submit((e) => {
+            e.preventDefault(); // ഫോമിന്റെ സാധാരണ സബ്മിഷൻ ഒഴിവാക്കുന്നു
+            $.ajax({
+                url: "https://script.google.com/macros/s/AKfycbwirCxWkKxiXxtC1KbFBIK83nSxAw7pRrf6EkQQ/exec", // ഇവിടെയാണ് Google Apps Script-ന്റെ ലിങ്ക്
+                data: $("#submit-form").serialize(), // ഫോമിലെ ഡാറ്റയെല്ലാം എടുക്കുന്നു
+                method: "post", // ഡാറ്റ POST മെത്തേഡ് വഴി അയക്കുന്നു
+                success: function (response) { // വിജയകരമായി അയച്ചാൽ ഈ ഫങ്ക്ഷൻ പ്രവർത്തിക്കും
+                    alert("Form submitted successfully");
+                    window.location.reload(); // പേജ് റീലോഡ് ചെയ്യും
+                    //window.location.href="https://google.com" 
+                },
+                error: function (err) { // എന്തെങ്കിലും പ്രശ്നമുണ്ടെങ്കിൽ ഈ ഫങ്ക്ഷൻ പ്രവർത്തിക്കും
+                    alert("Something Error");
+                }
+            });
+        });
+    </script>
 </body>
+
 </html>
